@@ -1,6 +1,4 @@
-import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
@@ -19,7 +17,7 @@ const LayoutWrapper = ({ children }) => {
                   <Link
                     key={link.title}
                     href={link.href}
-                    className="p-2 mx-2 font-medium text-gray-900 sm:p-2 dark:text-gray-100 hover:bg-blue-100 hover:rounded "
+                    className="p-2 mr-4 font-medium text-gray-900 sm:p-2 dark:text-gray-100 hover:bg-blue-100 hover:rounded "
                   >
                     {link.title}
                   </Link>
@@ -33,6 +31,7 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </header>
         <main className="mb-auto">{children}</main>
+
         <Footer />
       </div>
     </SectionContainer>
