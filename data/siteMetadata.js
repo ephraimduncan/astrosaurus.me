@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'A portfolio and blog for Ephraim Atta-Duncan created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://astrosaurus.xyz',
+  siteUrl: 'https://astrosaurus.me',
   siteRepo: 'https://github.com/dephraiim/astrosaurus.xyz',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
