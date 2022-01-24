@@ -1,7 +1,7 @@
 import formatDate from '@/lib/utils/formatDate'
 import Link from 'next/link'
 
-export default function BlogCard({ title, summary, date, slug }) {
+export default function BlogPost({ title, summary, date, slug }) {
   return (
     <li key={slug} className="py-4">
       <article className=" xl:items-baseline">

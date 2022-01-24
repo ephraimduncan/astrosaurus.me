@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
-import BlogCard from '@/components/BlogCard'
+import BlogPost from '@/components/BlogPost'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const [searchValue, setSearchValue] = useState('')
@@ -48,7 +48,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary } = frontMatter
-            return <BlogCard key={slug} slug={slug} title={title} summary={summary} date={date} />
+            return <BlogPost key={slug} slug={slug} title={title} summary={summary} date={date} />
           })}
         </ul>
       </div>
