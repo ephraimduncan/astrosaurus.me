@@ -1,6 +1,6 @@
-import Link from './Link'
-import siteMetadata, { github, twitter } from '@/data/siteMetadata'
-import NewsletterForm from './NewsletterForm'
+import Link from './Link';
+import siteMetadata, { github, twitter } from '@/data/siteMetadata';
+import NewsletterForm from './NewsletterForm';
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -11,7 +11,7 @@ const ExternalLink = ({ href, children }) => (
   >
     {children}
   </a>
-)
+);
 
 export default function Footer() {
   return (
@@ -43,5 +43,5 @@ export default function Footer() {
         )}
       </div>
     </footer>
-  )
+  );
 }

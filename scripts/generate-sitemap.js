@@ -1,10 +1,10 @@
-const fs = require('fs')
-const globby = require('globby')
-const prettier = require('prettier')
-const siteMetadata = require('../data/siteMetadata')
+const fs = require('fs');
+const globby = require('globby');
+const prettier = require('prettier');
+const siteMetadata = require('../data/siteMetadata');
 
-;(async () => {
-  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
+(async () => {
+  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const pages = await globby([
     'pages/*.js',
     'data/blog/**/*.mdx',
@@ -12,7 +12,7 @@ const siteMetadata = require('../data/siteMetadata')
     'public/tags/**/*.xml',
     '!pages/_*.js',
     '!pages/api',
-  ])
+  ]);
 
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>
@@ -26,26 +26,26 @@ const siteMetadata = require('../data/siteMetadata')
                   .replace('.js', '')
                   .replace('.mdx', '')
                   .replace('.md', '')
-                  .replace('/feed.xml', '')
-                const route = path === '/index' ? '' : path
+                  .replace('/feed.xml', '');
+                const route = path === '/index' ? '' : path;
                 if (page === `pages/404.js` || page === `pages/blog/[...slug].js`) {
-                  return
+                  return;
                 }
                 return `
                         <url>
                             <loc>${siteMetadata.siteUrl}${route}</loc>
                         </url>
-                    `
+                    `;
               })
               .join('')}
         </urlset>
-    `
+    `;
 
   const formatted = prettier.format(sitemap, {
     ...prettierConfig,
     parser: 'html',
-  })
+  });
 
   // eslint-disable-next-line no-sync
-  fs.writeFileSync('public/sitemap.xml', formatted)
-})()
+  fs.writeFileSync('public/sitemap.xml', formatted);
+})();

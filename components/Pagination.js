@@ -1,8 +1,8 @@
-import Link from '@/components/Link'
+import Link from '@/components/Link';
 
 export default function Pagination({ totalPages, currentPage }) {
-  const prevPage = parseInt(currentPage) - 1 > 0
-  const nextPage = parseInt(currentPage) + 1 <= parseInt(totalPages)
+  const prevPage = parseInt(currentPage) - 1 > 0;
+  const nextPage = parseInt(currentPage) + 1 <= parseInt(totalPages);
 
   return (
     <div className="pt-6 pb-8 space-y-2 md:space-y-5">
@@ -32,5 +32,5 @@ export default function Pagination({ totalPages, currentPage }) {
         )}
       </nav>
     </div>
-  )
+  );
 }

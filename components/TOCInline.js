@@ -30,12 +30,12 @@ const TOCInline = ({
 }) => {
   const re = Array.isArray(exclude)
     ? new RegExp('^(' + exclude.join('|') + ')$', 'i')
-    : new RegExp('^(' + exclude + ')$', 'i')
+    : new RegExp('^(' + exclude + ')$', 'i');
 
   const filteredToc = toc.filter(
     (heading) =>
       heading.depth >= fromHeading && heading.depth <= toHeading && !re.test(heading.value)
-  )
+  );
 
   const tocList = (
     <ul>
@@ -45,7 +45,7 @@ const TOCInline = ({
         </li>
       ))}
     </ul>
-  )
+  );
 
   return (
     <>
@@ -58,7 +58,7 @@ const TOCInline = ({
         tocList
       )}
     </>
-  )
-}
+  );
+};
 
-export default TOCInline
+export default TOCInline;

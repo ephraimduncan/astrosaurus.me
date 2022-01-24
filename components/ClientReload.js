@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import Router from 'next/router'
+import { useEffect } from 'react';
+import Router from 'next/router';
 
 /**
  * Client-side complement to next-remote-watch
@@ -10,14 +10,14 @@ export const ClientReload = () => {
   // Exclude socket.io from prod bundle
   useEffect(() => {
     import('socket.io-client').then((module) => {
-      const socket = module.io()
+      const socket = module.io();
       socket.on('reload', (data) => {
         Router.replace(Router.asPath, undefined, {
           scroll: false,
-        })
-      })
-    })
-  }, [])
+        });
+      });
+    });
+  }, []);
 
-  return null
-}
+  return null;
+};

@@ -1,5 +1,5 @@
-import formatDate from '@/lib/utils/formatDate'
-import Link from 'next/link'
+import formatDate from '@/lib/utils/formatDate';
+import Link from 'next/link';
 
 export default function BlogPostCard({ title, slug, index, date }) {
   return (
@@ -22,5 +22,5 @@ export default function BlogPostCard({ title, slug, index, date }) {
         </div>
       </a>
     </Link>
-  )
+  );
 }

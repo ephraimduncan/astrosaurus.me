@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import kebabCase from '@/lib/utils/kebabCase'
+import Link from 'next/link';
+import kebabCase from '@/lib/utils/kebabCase';
 
 const Tag = ({ text }) => {
   return (
@@ -8,7 +8,7 @@ const Tag = ({ text }) => {
         {text.split(' ').join('-')}
       </a>
     </Link>
-  )
-}
+  );
+};
 
-export default Tag
+export default Tag;

@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import Pagination from '@/components/Pagination'
-import BlogPost from '@/components/BlogPost'
+import { useState } from 'react';
+import Pagination from '@/components/Pagination';
+import BlogPost from '@/components/BlogPost';
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
-  const [searchValue, setSearchValue] = useState('')
+  const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = posts.filter((frontMatter) => {
-    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
-    return searchContent.toLowerCase().includes(searchValue.toLowerCase())
-  })
+    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ');
+    return searchContent.toLowerCase().includes(searchValue.toLowerCase());
+  });
 
   // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
+    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts;
 
   return (
     <>
@@ -47,8 +47,8 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
-            const { slug, date, title, summary } = frontMatter
-            return <BlogPost key={slug} slug={slug} title={title} summary={summary} date={date} />
+            const { slug, date, title, summary } = frontMatter;
+            return <BlogPost key={slug} slug={slug} title={title} summary={summary} date={date} />;
           })}
         </ul>
       </div>
@@ -56,5 +56,5 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
       )}
     </>
-  )
+  );
 }

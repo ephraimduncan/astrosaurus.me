@@ -1,16 +1,16 @@
-import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import NewsletterForm from '@/components/NewsletterForm'
-import BlogPostCard from '@/components/BlogPostCard'
+import Link from '@/components/Link';
+import { PageSEO } from '@/components/SEO';
+import siteMetadata from '@/data/siteMetadata';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
+import NewsletterForm from '@/components/NewsletterForm';
+import BlogPostCard from '@/components/BlogPostCard';
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 5;
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
+  const posts = await getAllFilesFrontMatter('blog');
 
-  return { props: { posts } }
+  return { props: { posts } };
 }
 
 export default function Home({ posts }) {
@@ -33,11 +33,11 @@ export default function Home({ posts }) {
         <div className="mb-6">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter, index) => {
-            const { slug, title, date } = frontMatter
+            const { slug, title, date } = frontMatter;
 
             return (
               <BlogPostCard key={slug} date={date} index={index + 1} title={title} slug={slug} />
-            )
+            );
           })}
         </div>
       </div>
@@ -53,5 +53,5 @@ export default function Home({ posts }) {
         </div>
       )}
     </>
-  )
+  );
 }
