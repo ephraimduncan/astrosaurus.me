@@ -1,29 +1,49 @@
 import Link from './Link'
-import siteMetadata from '@/data/siteMetadata'
-import SocialIcon from '@/components/social-icons'
+import { github, twitter } from '@/data/siteMetadata'
+
+const ExternalLink = ({ href, children }) => (
+  <a
+    className="text-gray-500 hover:text-gray-600 transition"
+    target="_blank"
+    rel="noopener noreferrer"
+    href={href}
+  >
+    {children}
+  </a>
+)
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="flex flex-col items-center mt-16">
-        <div className="flex mb-3 space-x-4">
-          <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size="6" />
-          <SocialIcon kind="github" href={siteMetadata.github} size="6" />
-          <SocialIcon kind="facebook" href={siteMetadata.facebook} size="6" />
-          <SocialIcon kind="youtube" href={siteMetadata.youtube} size="6" />
-          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
-          <SocialIcon kind="twitter" href={siteMetadata.twitter} size="6" />
+    <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full my-8">
+      <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
+      <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
+        <div className="flex flex-col space-y-4">
+          <Link href="/">
+            <a className="text-gray-500 hover:text-gray-600 transition">Home</a>
+          </Link>
+          <Link href="/about">
+            <a className="text-gray-500 hover:text-gray-600 transition">About</a>
+          </Link>
+          <Link href="/blog">
+            <a className="text-gray-500 hover:text-gray-600 transition">Blog</a>
+          </Link>
         </div>
-        <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <div>{siteMetadata.author}</div>
-          <div>{` • `}</div>
-          <div>{`© ${new Date().getFullYear()}`}</div>
-          <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
+        <div className="flex flex-col space-y-4">
+          <ExternalLink href={twitter}>Twitter</ExternalLink>
+          <ExternalLink href={github}>GitHub</ExternalLink>
         </div>
-        <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-            Tailwind Nextjs Theme
+        <div className="flex flex-col space-y-4">
+          <Link href="/uses">
+            <a className="text-gray-500 hover:text-gray-600 transition">Uses</a>
+          </Link>
+          <Link href="/guestbook">
+            <a className="text-gray-500 hover:text-gray-600 transition">Guestbook</a>
+          </Link>
+          <Link href="/snippets">
+            <a className="text-gray-500 hover:text-gray-600 transition">Snippets</a>
+          </Link>
+          <Link href="/tweets">
+            <a className="text-gray-500 hover:text-gray-600 transition">Tweets</a>
           </Link>
         </div>
       </div>
