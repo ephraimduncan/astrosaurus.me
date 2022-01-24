@@ -1,7 +1,7 @@
 ---
 name: Ephraim Atta-Duncan
 avatar: /static/images/avatar.png
-occupation: Web Developer, Techical Writer
+occupation: Developer, Techical Writer
 company: University of Mines and Technology
 email: ephraimduncan68@gmail.com
 twitter: https://twitter.com/dephraiim
