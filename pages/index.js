@@ -2,7 +2,6 @@ import Link from '@/components/Link';
 import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
-import NewsletterForm from '@/components/NewsletterForm';
 import BlogPostCard from '@/components/BlogPostCard';
 
 const MAX_DISPLAY = 5;
@@ -20,9 +19,16 @@ export default function Home({ posts }) {
         title={siteMetadata.title + ' - Developer, Writer'}
         description={siteMetadata.description}
       />
-      <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-        {siteMetadata.description}
-      </p>
+      <div>
+        <h3 className="font-bold text-2xl mt-4 md:text-3xl tracking-tight  text-black dark:text-white">
+          Ephraim Atta-Duncan
+        </h3>
+        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          I'm a developer, writer and an indie hacker building products for the web. I like open
+          source too.
+        </p>
+      </div>
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="pt-6 pb-4 space-y-2 md:space-y-5">
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight  text-black dark:text-white">
