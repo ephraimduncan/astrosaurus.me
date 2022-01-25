@@ -42,25 +42,24 @@ module.exports = {
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
               marginTop: '24px',
-
-              marginBottom: '0px',
+              marginBottom: '4px',
             },
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
-              marginBottom: '0px',
+              marginBottom: '4px',
               marginTop: '24px',
             },
             h3: {
               fontWeight: '600',
               color: theme('colors.gray.900'),
-              marginBottom: '0px',
+              marginBottom: '4px',
               marginTop: '24px',
             },
             'h4,h5,h6': {
               color: theme('colors.gray.800'),
-              marginBottom: '0px',
+              marginBottom: '4px',
               marginTop: '24px',
             },
             pre: {
