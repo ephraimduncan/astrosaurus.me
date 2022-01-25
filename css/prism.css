@@ -1,6 +1,6 @@
 /**
  * CSS Styles for code highlighting.
- * Feel free to customize token styles 
+ * Feel free to customize token styles
  * by copying from a prismjs compatible theme:
  * https://github.com/PrismJS/prism-themes
  */
@@ -20,7 +20,7 @@
 }
 
 .code-line {
-  @apply block pl-4 pr-4 -mx-4 border-l-4 border-opacity-0;
+  @apply block pl-4 pr-4 -mx-4 border-opacity-0;
 }
 
 .code-line.inserted {
