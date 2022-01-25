@@ -69,12 +69,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           >
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pb-4 prose dark:prose-dark max-w-none">{children}</div>
-              <div className="pt-6 text-sm text-gray-700 dark:text-gray-300">
+              <div className="pt-6 flex justify-between text-sm text-gray-700 dark:text-gray-300">
+                <Link href={editUrl(fileName)}>{'Thanks for reading'}</Link>
                 <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
               </div>
             </div>
             <footer>
