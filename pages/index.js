@@ -31,7 +31,7 @@ export default function Home({ posts }) {
 
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="pt-6 pb-4 space-y-2 md:space-y-5">
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight  text-black dark:text-white">
+          <h3 className="font-bold text-2xl md:text-3xl tracking-tight  text-black dark:text-white">
             Featured Posts
           </h3>
         </div>
