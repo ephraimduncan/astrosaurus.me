@@ -63,11 +63,8 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               {pageViews && <div>Page Views</div>}
             </div>
           </header>
-          <div
-            className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 "
-            style={{ gridTemplateRows: 'auto 1fr' }}
-          >
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
+          <div className="pb-8 " style={{ gridTemplateRows: 'auto 1fr' }}>
+            <div className=" xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pb-4 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 flex justify-between text-sm text-gray-700 dark:text-gray-300">
                 <Link href={editUrl(fileName)}>{'Thanks for reading 💖'}</Link>
