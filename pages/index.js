@@ -3,6 +3,7 @@ import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import BlogPostCard from '@/components/BlogPostCard';
+import { FeaturedPosts as posts } from '@/data/featuredPosts';
 
 const MAX_DISPLAY = 5;
 
@@ -12,7 +13,7 @@ export async function getStaticProps() {
   return { props: { posts } };
 }
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <>
       <PageSEO
@@ -47,17 +48,16 @@ export default function Home({ posts }) {
           })}
         </div>
       </div>
-      {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6 mb-6">
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="blog posts"
-          >
-            All Posts &rarr;
-          </Link>
-        </div>
-      )}
+
+      <div className="flex justify-end text-base font-medium leading-6 mb-6">
+        <Link
+          href="/blog"
+          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+          aria-label="blog posts"
+        >
+          All Posts &rarr;
+        </Link>
+      </div>
     </>
   );
 }

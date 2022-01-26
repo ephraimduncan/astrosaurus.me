@@ -1,5 +1,5 @@
 ---
-title: '50 Essential Tips for Every Developer.'
+title: '50 Essential Tips for Every Developer'
 date: '2020-10-18'
 tags: ['productivity']
 draft: false
