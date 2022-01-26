@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Ephraim Atta-Duncan',
   author: 'Ephraim Atta-Duncan',
   headerTitle: 'Astrosaurus',
-  description: 'A portfolio and blog for Ephraim Atta-Duncan created with Next.js and Tailwind.css',
+  description: 'Ephraim Atta-Duncan, Software Developer in Ghana. Technical Writer in Ghana',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://astrosaurus.me',
