@@ -33,6 +33,9 @@ export default function Footer() {
           <div className="flex flex-row  mb-1 sm:mb-0  sm:flex-col space-x-8 sm:space-x-0 justify-center sm:justify-start sm:space-y-4">
             <ExternalLink href={twitter}>Twitter</ExternalLink>
             <ExternalLink href={github}>GitHub</ExternalLink>
+            <Link href="/feed.xml">
+              <a className="text-gray-500 hover:text-gray-600 transition">RSS</a>
+            </Link>
           </div>
         </div>
 
