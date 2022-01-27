@@ -1,21 +1,39 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'jot',
+    description: 'A Simple New Tab Writer extension for Google Chrome',
+    imgSrc: '',
+    href: 'https://github.com/dephraiim/jot',
   },
   {
-    title: 'The Tome Machine',
-    description: `Imagine being able to.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'termd',
+    description: `Render markdown in the terminal`,
+    imgSrc: '',
+    href: 'https://github.com/dephraiim/termd',
   },
   {
-    title: 'The Time Machine',
-    description: `No more woraffordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'awesome-developer-dictionary',
+    description: '📖 A curated list of definitions of programming terms.',
+    imgSrc: '',
+    href: 'https://github.com/dephraiim/awesome-developer-dictionary',
+  },
+  {
+    title: 'Next.js Tailwind Portfolio Template',
+    description: 'A simple template to get started with Next.js and Tailwind for your portfolio',
+    imgSrc: '',
+    href: 'https://github.com/dephraiim/nextjs-portfolio-template',
+  },
+  {
+    title: 'Twitter Bot Action for Github',
+    description: 'A github action to run your Twitter Bot',
+    imgSrc: '',
+    href: 'https://github.com/marketplace/actions/twitter-bot-action',
+  },
+  {
+    title: 'Create Nextra App',
+    description: 'A cli to bootstrap a new Nextra App',
+    imgSrc: '',
+    href: 'https://github.com/dephraiim/create-nextra-app',
   },
 ];
 
