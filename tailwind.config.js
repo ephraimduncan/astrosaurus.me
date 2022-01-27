@@ -5,6 +5,10 @@ module.exports = {
   content: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
   darkMode: 'class',
   theme: {
+    screens: {
+      xs: '425px',
+      ...defaultTheme.screens,
+    },
     extend: {
       spacing: {
         '9/16': '56.25%',
