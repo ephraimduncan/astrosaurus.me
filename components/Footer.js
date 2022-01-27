@@ -39,11 +39,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {siteMetadata.newsletter.provider !== '' && (
-          <div className="flex sm:items-center sm:justify-center sm:pt-4 mb-5 ">
-            <NewsletterForm />
-          </div>
-        )}
+        <div className="flex flex-col sm:items-center sm:justify-center  mb-5 ">
+          <p className="text-gray-500 text-base self-start dark:text-gray-400 text-left sm:text-right mb-2">
+            Understand, don't memorize.
+          </p>
+          {siteMetadata.newsletter.provider !== '' && <NewsletterForm />}
+        </div>
       </div>
     </footer>
   );
