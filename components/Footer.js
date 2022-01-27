@@ -16,6 +16,7 @@ const ExternalLink = ({ href, children }) => (
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-center items-start mx-auto w-full my-8">
+      <FooterGradient />
       <hr className="w-full border-1 border-gray-100 dark:border-gray-800 mb-8" />
       <div className="w-full pb-16 flex flex-col-reverse justify-between sm:flex-row">
         <div className="flex flex-col sm:flex-row sm:space-x-16">
@@ -47,5 +48,13 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterGradient() {
+  return (
+    <div className="mx-auto max-w-6xl motion-safe:animate-rotate-colors pointer-events-none z-[-1]">
+      <div className="absolute inset-x-0 bg-gradient-to-r from-amber-500 via-indigo-500 to-emerald-500 rounded-t-full opacity-20 blur-3xl h-[200px]" />
+    </div>
   );
 }
