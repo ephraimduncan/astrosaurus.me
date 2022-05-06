@@ -38,8 +38,8 @@ module.exports = {
               code: { color: theme('colors.primary.400') },
             },
             p: {
-              marginTop: '4px',
-              marginBottom: '4px',
+              marginTop: '6px',
+              marginBottom: '6px',
             },
             h1: {
               fontWeight: '700',
