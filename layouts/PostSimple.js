@@ -7,7 +7,7 @@ import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import Image from '@/components/Image';
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { date, title, slug, fileName } = frontMatter;
+  const { date, title, slug, fileName, readingTime } = frontMatter;
 
   const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
   const discussUrl = (slug) =>
@@ -60,7 +60,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   </Link>
                 ))}
               </div>
-              {pageViews && <div>Page Views</div>}
+              <div className="flex items-center space-x-2 ">
+                <div className="text-gray-500 dark:text-gray-400">{readingTime.text}</div>
+                {pageViews && <div>Page Views</div>}
+              </div>
             </div>
           </header>
           <div className="pb-8 " style={{ gridTemplateRows: 'auto 1fr' }}>
