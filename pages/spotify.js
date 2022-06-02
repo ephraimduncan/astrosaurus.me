@@ -1,5 +1,5 @@
-import TopTracks from '@/components/TopTracks';
-import RecentTracks from '@/components/RecentTracks';
+import NowPlaying from '@/components/NowPlaying';
+import Tracks from '@/components/Tracks';
 
 export default function Spotify() {
   return (
@@ -10,12 +10,16 @@ export default function Spotify() {
       <p className="text-gray-600 dark:text-gray-400 mb-4">
         Here's my top tracks on Spotify updated daily.
       </p>
-      <TopTracks />
+      <Tracks track="top" />
       <h2 className="font-bold text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
         Recent Tracks
       </h2>
       <p className="text-gray-600 dark:text-gray-400 mb-4">Here's my recent tracks on Spotify.</p>
-      <RecentTracks />
+      <Tracks track="recent" />
+
+      <div className="mt-12">
+        <NowPlaying />
+      </div>
     </div>
   );
 }
