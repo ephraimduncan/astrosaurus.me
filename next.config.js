@@ -66,6 +66,20 @@ module.exports = withBundleAnalyzer({
       },
     ];
   },
+
+  async rewrites() {
+    return [
+      {
+        source: '/bee.js',
+        destination: 'https://cdn.splitbee.io/sb.js',
+      },
+      {
+        source: '/_hive/:slug',
+        destination: 'https://hive.splitbee.io/:slug',
+      },
+    ];
+  },
+
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
