@@ -15,7 +15,7 @@ const ExternalLink = ({ href, children }) => (
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-center items-start mx-auto w-full my-8">
+    <footer className="flex flex-col justify-center items-start mx-auto w-full mb-8 mt-4">
       <FooterGradient />
       <hr className="w-full border-1 border-gray-100 dark:border-gray-800 mb-8" />
       <div className="w-full pb-16 flex flex-col-reverse justify-between sm:flex-row">
@@ -34,6 +34,9 @@ export default function Footer() {
           <div className="flex flex-row  mb-1 sm:mb-0  sm:flex-col space-x-8 sm:space-x-0 justify-center sm:justify-start sm:space-y-4">
             <ExternalLink href={twitter}>Twitter</ExternalLink>
             <ExternalLink href={github}>GitHub</ExternalLink>
+            <Link href="/spotify">
+              <a className="text-gray-500 hover:text-gray-600 transition">Spotify</a>
+            </Link>
             <Link href="/feed.xml">
               <a className="text-gray-500 hover:text-gray-600 transition">RSS</a>
             </Link>
