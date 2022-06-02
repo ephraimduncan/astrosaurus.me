@@ -1200,11 +1200,6 @@
     "@motionone/dom" "^10.10.0"
     tslib "^2.3.1"
 
-"@napi-rs/triples@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@napi-rs/triples/-/triples-1.0.3.tgz#76d6d0c3f4d16013c61e45dfca5ff1e6c31ae53c"
-  integrity sha512-jDJTpta+P4p1NZTFVLHJ/TLFVYVcOqv6l8xwOeBKNPMgY/zDYH/YH7SJbvrr/h1RcS9GzbPcLKGzpuK9cV56UA==
-
 "@next/bundle-analyzer@12.0.7":
   version "12.0.7"
   resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-12.0.7.tgz#2822e2c530ca7d7b83948154a69221e309eaa073"
@@ -1327,6 +1322,11 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.0.0.tgz#8863915676f837d9dad7b76f50cb500c1e9422e9"
   integrity sha512-2pTGuibAXJswAPJjaKisthqS/NOK5ypG4LYT6tEAV0S/mxW0zOIvYvGK0V8w8+SHxAm6vRMSjqSalFXeBAqs+Q==
+
+"@splitbee/web@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@splitbee/web/-/web-0.3.0.tgz#676ebe877b6d82a10ece6527a07f70b1994d242e"
+  integrity sha512-jNPDKg0GQGa4jCaBc6JQsv0NHmBA80WCwZE49nFyhcbo32WF0GyqXeice7ZApy7OUHI16bAUAzm4MOQw3gvxfQ==
 
 "@svgr/babel-plugin-add-jsx-attribute@^6.0.0":
   version "6.0.0"
@@ -3762,24 +3762,10 @@ hastscript@^7.0.0:
     property-information "^6.0.0"
     space-separated-tokens "^2.0.0"
 
-he@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
-  integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
-
 hey-listen@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
   integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
-
-hmac-drbg@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
-  integrity sha1-0nRXAQJabHdabFRXk+1QL8DGSaE=
-  dependencies:
-    hash.js "^1.0.3"
-    minimalistic-assert "^1.0.0"
-    minimalistic-crypto-utils "^1.0.1"
 
 http-cache-semantics@^4.0.0:
   version "4.1.0"
