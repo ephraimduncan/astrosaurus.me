@@ -4,6 +4,7 @@ import siteMetadata from '@/data/siteMetadata';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import BlogPostCard from '@/components/BlogPostCard';
 import { FeaturedPosts as posts } from '@/data/featuredPosts';
+import NowPlaying from '@/components/NowPlaying';
 
 const MAX_DISPLAY = 5;
 
@@ -58,6 +59,7 @@ export default function Home() {
           All Posts &rarr;
         </Link>
       </div>
+      <NowPlaying />
     </>
   );
 }
