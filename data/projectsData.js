@@ -1,5 +1,17 @@
 const projectsData = [
   {
+    title: 'Take A Break',
+    description: 'A simple app to take 2 minutes break and get some rest.',
+    imgSrc: '',
+    href: 'https://github.com/dephraiim/take-a-break',
+  },
+  {
+    title: 'react-svg-spinners',
+    description: 'A React Component Library for SVG Spinners.',
+    imgSrc: '',
+    href: 'https://github.com/dephraiim/react-svg-spinners',
+  },
+  {
     title: 'jot',
     description: 'A Simple New Tab Writer extension for Google Chrome',
     imgSrc: '',
@@ -31,7 +43,7 @@ const projectsData = [
   },
   {
     title: 'Create Nextra App',
-    description: 'A cli to bootstrap a new Nextra App',
+    description: 'A command line interface to bootstrap a new Nextra App',
     imgSrc: '',
     href: 'https://github.com/dephraiim/create-nextra-app',
   },
