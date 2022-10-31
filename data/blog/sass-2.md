@@ -1,26 +1,20 @@
 ---
-title: ' Getting Started With Sass - Part 2'
+title: ' Getting Started With Sass - 2'
 date: '2020-08-13'
 tags: ['sass', 'css']
 draft: false
 summary: 'Part 2 of guide to getting started with Sass'
 ---
 
-# Sass
+## Introduction
 
 In the earlier part of this post, I talked about what Sass is and how to get started easily for a beginner programmer. You can find it [here](/dephraiim.github.io/2020/04/18/getting-started-with-sass.html). In this section, I assume you have set up your development environment and you are ready to get started coding with Sass.
 
-### Table Of Contents
+## Table of Contents
 
-- [Variables](#sass-variables)
-- [Nesting](#sass-nesting)
-- [Mixins](#sass-mixins)
-- [Functions](#sass-functions)
-- [Modules](#sass-modules)
-- [Inheritance](#sass-inheritance)
-- [Control Flow](#sass-control-flow)
+<TOCInline toc={props.toc} exclude="Table of Contents" />
 
-### Sass Variables
+## Sass Variables
 
 Variables are just placeholders. They hold data for future use. Sass Variables are simple and very elegant. You can just assign a value to a variable name: the value can be a color name, hexadecimal value of a color, size in px or rem, virtually any data useful can be stored.
 
@@ -56,7 +50,7 @@ p {
 
 > CSS also has variables, seperate from the Sass Variables. The two are not the same.
 
-### Sass Nesting
+## Sass Nesting
 
 When writing CSS, take a situation wherehy you are creating a navbar, with the nav tag and in the nav tag are a list each containing a link. To select a link to apply a style to it, you need to select ll the parent tags(for specificity) to get a style work on a specific tag. Sass makes your life easier. You can just write the code for the tag in the parent. That's nesting
 
@@ -165,7 +159,7 @@ The compiled CSS will be as below.
 }
 ```
 
-### Sass Mixins
+## Sass Mixins
 
 Sass mixins are just like mixins in Ruby and functions in JavaScript. You can type in reusable blocks of code into the mixin and reuse it over and over again. Mixins can take an argument or not, It is not compulsory.
 
@@ -204,7 +198,7 @@ button {
 
 > Sass Mixins and Functions are not the same.
 
-#### Sass Functions
+### Sass Functions
 
 Sass Functions look similiar to mixins but different. In Sass, mixins return a block of code, chunk of code that can be used over and over again. For functions, they are made to return a specific value. Single values, not blocks of code. Functions have a return statement, just like javascript but mixins do not.
 
@@ -235,7 +229,7 @@ $base-size: 16;
 
 > Functions are mainly used for calculations. For dynamic calculations od sizes, lengths, widths and even colours. Sass also has inbuilt functions to perform some actions.
 
-### Sass Modules
+## Sass Modules
 
 Modules are divisions of code into other sections amd partials. It prevents DRY code. Sass implements this system to make it easy to maintain the code and faster to debug. You create a main scss file, then you create a partial file, beginning the file name with `_`, then you import the partial into the main file.
 
@@ -320,7 +314,7 @@ $_moon: #1e1e1e;
 
 > To configure the values in a file,`!default` must be set after it to make it available for configuration. `@use` brings a new feature when you can make a variable private to avoid it from being used or modified. To make a variable private, `-` or `_` must be prefixed to it and it makes private.
 
-### Sass Inheritance.
+## Sass Inheritance.
 
 Sass allows you to inherit a block of code in a specific selector. It extends the same code into the new selector.
 

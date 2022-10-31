@@ -6,6 +6,12 @@ draft: false
 summary: 'A quick guide to contributing to open source projects on Github'
 ---
 
+## Table of Contents
+
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
+## Introduction
+
 Open Source is really great and it has a lot of advantages but many people find it difficult to contribute to open source. I am writing this as a simple guide to make your first contribution on github.
 
 [First Contributions](https://github.com/firstcontributions/first-contributions) is a github repository that is focused helping beginners to make thier first open source contribution. I will guide you through the steps.

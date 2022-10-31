@@ -6,6 +6,10 @@ draft: false
 summary: 'JavaScript Array methods cheatsheet'
 ---
 
+## Table of Contents
+
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
 Probably anyone reading this knows what an array is but let's revise a bit.
 
 #### What is a Array?

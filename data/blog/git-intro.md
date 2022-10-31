@@ -6,7 +6,15 @@ draft: false
 summary: 'A git commands cheatsheet'
 ---
 
-Git is a very powerful, free, open-source and popular version control used worldwide by millions of developers and large companies. It has been and is used to version millions of software to avoid conflicts and make the work of developers really easy.
+## Table of Contents
+
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
+## Introduction
+
+Git is a very powerful, free, open-source and popular version control used worldwide by millions of developers
+and large companies. It has been and is used to version millions of software to avoid conflicts and make
+the work of developers really easy.
 
 This is a Git Commands Handbook, more like a cheatsheet to the various commands for easy reference.
 

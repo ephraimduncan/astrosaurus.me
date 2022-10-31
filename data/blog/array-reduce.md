@@ -6,6 +6,12 @@ draft: false
 summary: 'An easy analogy to understand Array.reduce()'
 ---
 
+## Table of Contents
+
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
+## Introduction
+
 ![Array Reduce](https://res.cloudinary.com/practicaldev/image/fetch/s--4CmAIMAF--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/t2zz9h037txs866cbe2v.png)
 
 Of the number of Array helper functions, the most confusing and rarely used is the `Array.reduce()` function.

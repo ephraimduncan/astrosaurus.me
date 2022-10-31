@@ -6,6 +6,12 @@ draft: false
 summary: 'TypeScript Basics for beginners'
 ---
 
+## Table of Contents
+
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
+## Introduction
+
 Typescript is an open-source object oriented programming language developed and maintained by Microsoft. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It's more like if JavsScript is raw coffee, TypeScript is coffee with milk, another coffee, just much better.
 
 ![TypeScript Superset](https://cdn.hashnode.com/res/hashnode/image/upload/v1629159907770/tjzzr7cX-.png)

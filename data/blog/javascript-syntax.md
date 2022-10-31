@@ -6,6 +6,12 @@ draft: false
 summary: 'An overview of how to create your own JavaScript Syntax'
 ---
 
+## Table of Contents
+
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
+## Introduction
+
 Today we are going to create our own syntax in JavaScript. For simplicity sake and easy understanding, we will stick to a single javascript structure. Variable Declaration. We are going to implement a new syntax for declaring variables in JavaScript. The new syntax definition will be below.
 
 ```js
@@ -24,7 +30,7 @@ A compiler.
 
 Don't get too scared, it will be a very small and tiny one. For simplicity, our compiler will only support `numbers`, `strings`, `boolean` and `null`.
 
-### The Compiler
+## The Compiler
 
 Different compilers work in different ways but break down to the three primary stages:
 
@@ -32,7 +38,7 @@ Different compilers work in different ways but break down to the three primary s
 - **`Transformation`** : takes the abstract representation and transforms and modifies it into another abstract representation of the target language.
 - **`Code Generation`** : takes the transformed abstract representation and generates the new code based on the given abstract representation.
 
-### Parsing
+## Parsing
 
 Parsing also gets broken down into two stages. `Lexical Analysis` (lexing/ tokenizing) and `Syntactic Analysis`. `Lexical Analysis` takes the raw code and turn each character it into a `token` with the lexer/tokenizer. The tokenizer returns an array of all the tokens for a given syntax.
 
@@ -79,7 +85,7 @@ The parser will return the object below.
 }
 ```
 
-### Transformation
+## Transformation
 
 The next stage for our compiler is transformation. Taking the AST and transforming it into a totally new AST for any programming language or just modifying the same one. We won't generate a new AST, we will just modify it.
 On our AST, we have at each level an object with a `type` property. These are known as AST Node. These nodes have defined properties on them that describe one isolated part of the tree.
@@ -129,7 +135,7 @@ At the `VariableDeclaration` node, we have a `kind` property that contains the c
 }
 ```
 
-### Code Generation
+## Code Generation
 
 Now that we have our new AST, we can now generate our code. Our new AST has everything we need. The keyword, the variable name and the value assigned to the variable. The name and value can be found in the `VariableDeclarator` node.
 

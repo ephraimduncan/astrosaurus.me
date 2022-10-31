@@ -6,15 +6,23 @@ draft: false
 summary: 'A guide to getting started with Sass'
 ---
 
-# Sass
+## Table of Contents
 
-Sass is a CSS pre-processor which makes writing CSS more faster and efficient. This is just a faster way to grab the basic syntax of Sass and how to get started with easily. For more advanced concepts, check the [Sass Documentation](http://sass-lang.com). CSS on it own can be fun and effective but as the document get larger and you write more code, it gets more difficult to maintain. Sass makes it easier to maintain much larger projects.
+<TOCInline toc={props.toc} exclude="Table of Contents" />
 
-### Prerequisites
+## Introduction
+
+Sass is a CSS pre-processor which makes writing CSS more faster and efficient. This is just a faster
+way to grab the basic syntax of Sass and how to get started with easily. For more advanced concepts,
+check the [Sass Documentation](http://sass-lang.com). CSS on it own can be fun and effective but as the
+document get larger and you write more code, it gets more difficult to maintain. Sass makes it easier
+to maintain much larger projects.
+
+## Prerequisites
 
 Basic HTML and CSS
 
-### Scss Vs Sass
+## Scss Vs Sass
 
 Sass (Synthetically Awesome Style Sheet) is an older version of sass and it uses a `.scss` extension.
 Scss (Sassy Scss) on the other hand is the current version of Sass.
@@ -61,7 +69,7 @@ body
 
 ```
 
-### Compiling Scss To Css
+## Compiling Scss To Css
 
 The styling language of the browser is CSS. The browser understands CSS but not Scss. With that, our scss code must be compiled into css for the browser to understand.
 
@@ -69,7 +77,7 @@ There are many ways scss can be compiled into clean css code.
 
 > _Sass is written is [Ruby](https://www.ruby-lang.org/en/)._
 
-#### Ways to compile Scss Code
+### Ways to compile Scss Code
 
 - Installing Sass through the command line with Ruby
 - Installing compiling softwares such as Koala, Live Reload and Hammer
@@ -78,7 +86,7 @@ There are many ways scss can be compiled into clean css code.
 
 > _In this tutorial, I will use the VS Code Extension, feel free to skip the section if you already know how to set it._
 
-### Setting Up Sass For VS Code
+## Setting Up Sass For VS Code
 
 - Have [Visual Studio Code](http://code.visualstudio.com) installed.
 - Go to the extensions panel and search for `live sass compiler`
@@ -116,11 +124,11 @@ There are many ways scss can be compiled into clean css code.
 
 > _After the button is clicked, the extension will recompile the scss to css on every save_.
 
-### Sass Syntax
+## Sass Syntax
 
 Pretty much every valid css is valid sass. If you type a valid css in a sass file without any other sass features, it will recompile it to the same valid css without any changes
 
-#### Features of Sass
+### Features of Sass
 
 - Variables
 - Control Flow Statements like @if, @each and @for
