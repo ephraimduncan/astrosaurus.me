@@ -4,8 +4,8 @@ avatar: /static/images/avatar.jpeg
 occupation: Software Developer, Techical Writer
 company: University of Mines and Technology
 email: ephraimduncan68@gmail.com
-twitter: https://twitter.com/dephraiim
-linkedin: https://www.linkedin.com/dephraiim
+twitter: https://twitter.com/EphraimDuncan_
+linkedin: https://www.linkedin.com/in/dephraiim
 github: https://github.com/dephraiim
 ---
 
