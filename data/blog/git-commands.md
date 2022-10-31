@@ -8,9 +8,7 @@ summary: 'A fun guide to creating Git aliases and some special aliases'
 
 ## Table of Contents
 
-<TOCInline toc={props.toc} exclude="Table of Contents" />
-
-### [TL;DR](#tldr)
+<TOCInline toc={props.toc} exclude={['Table of Contents']} />
 
 One of my favorite things about Git is being as simple as it is and also being customisable and one of those features is aliases. Git supports aliases which means you can give your commands any name you want. I prefer to set aliases for really long commands to avoid searching for them everytime I need it.
 
@@ -149,10 +147,19 @@ git fresh src main # Don't do this unless you know what you are doing
 
 The series of commands that `fresh` replace is used to create a new repository out of the contents of a subfolder. `filter-branch` with it many flags take a the contents of a specified subfolder and replaces the content in the while repo with the content of the subfolder.
 
-<h1 id="tldr">TL;DR</h1>
-Add this to your `.gitconfig` file. ```bash:.gitconfig [alias] recommit = commit --amend -m commend =
-commit --amend --no-edit here = !git init && git add . && git commit -m \"Initialized a new repository\"
-search = grep who = blame zip = archive --format=tar.gz -o ../repo.tar.gz lonely = clone --single-branch
---branch plg = log --graph --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %Cgreen| %cr %C(bold
-blue)| %an%Creset' --abbrev-commit --date=relative fresh = filter-branch --prune-empty --subdirectory-filter
+## TL;DR
+
+Add this to your `.gitconfig` file.
+
+```bash:.gitconfig
+[alias]
+	recommit = commit --amend -m
+	commend = commit --amend --no-edit
+	here = !git init && git add . && git commit -m \"Initialized a new repository\"
+	search = grep
+	who = blame
+	zip = archive --format=tar.gz -o ../repo.tar.gz
+	lonely = clone --single-branch --branch
+	plg = log --graph --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %Cgreen| %cr %C(bold blue)| %an%Creset' --abbrev-commit --date=relative
+    fresh = filter-branch --prune-empty --subdirectory-filter
 ```
