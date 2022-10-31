@@ -9,7 +9,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/dephraiim/astrosaurus.me',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpeg',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/card.png',
   email: 'ephraimduncan68@gmail.com',
   github: 'https://github.com/dephraiim',
   twitter: 'https://twitter.com/dephraiim',
