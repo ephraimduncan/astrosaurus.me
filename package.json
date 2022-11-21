@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.58",
-    "@splitbee/web": "^0.3.0",
     "@tailwindcss/typography": "^0.5.0",
     "@vercel/analytics": "^0.1.5",
     "autoprefixer": "10.4.5",
