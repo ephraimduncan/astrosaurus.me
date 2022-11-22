@@ -46,6 +46,9 @@ const Giscus = () => {
           data-loading="lazy"
           crossorigin="anonymous"
           async
+          onLoad={() => {
+            console.log(siteMetadata?.comment?.giscusConfig);
+          }}
         />
       </div>
     </div>
