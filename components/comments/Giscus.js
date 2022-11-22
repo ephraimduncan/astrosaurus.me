@@ -4,7 +4,6 @@ import { useTheme } from 'next-themes';
 import siteMetadata from '@/data/siteMetadata';
 
 const Giscus = () => {
-  const [enableLoadComments, setEnabledLoadComments] = useState(true);
   const { theme, resolvedTheme } = useTheme();
   const commentsTheme =
     siteMetadata.comment.giscusConfig.themeURL === ''
@@ -16,8 +15,6 @@ const Giscus = () => {
   const COMMENTS_ID = 'comments-container';
 
   const LoadComments = useCallback(() => {
-    setEnabledLoadComments(false);
-
     const {
       repo,
       repositoryId,
@@ -55,6 +52,11 @@ const Giscus = () => {
     };
   }, [commentsTheme]);
 
+  React.useEffect(() => {
+    LoadComments();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Reload on theme change
   useEffect(() => {
     const iframe = document.querySelector('iframe.giscus-frame');
@@ -64,7 +66,6 @@ const Giscus = () => {
 
   return (
     <div className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300">
-      {enableLoadComments && <button onClick={LoadComments}>Load Comments</button>}
       <div className="giscus" id={COMMENTS_ID} />
     </div>
   );

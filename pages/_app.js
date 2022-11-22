@@ -20,8 +20,8 @@ export default function App({ Component, pageProps }) {
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
       <LayoutWrapper>
-        <Component {...pageProps} />
         <Analytics />
+        <Component {...pageProps} />
       </LayoutWrapper>
     </ThemeProvider>
   );
