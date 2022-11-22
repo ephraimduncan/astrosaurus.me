@@ -48,20 +48,3 @@ const siteMetadata = {
 };
 
 module.exports = siteMetadata;
-
-/* <script src="https://giscus.app/client.js"
-        data-repo="dephraiim/astrosaurus.me"
-        data-repo-id="R_kgDOGrPD6Q"
-        data-category="Comments"
-        data-category-id="DIC_kwDOGrPD6c4CStFS"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script> */
