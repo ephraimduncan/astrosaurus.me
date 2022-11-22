@@ -5,6 +5,7 @@ import siteMetadata from '@/data/siteMetadata';
 import formatDate from '@/lib/utils/formatDate';
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
 import Image from '@/components/Image';
+import Comments from '@/components/comments';
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { date, title, slug, fileName, readingTime } = frontMatter;
@@ -76,6 +77,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 </Link>
               </div>
             </div>
+            <Comments />
             <footer>
               <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
                 {prev && (
