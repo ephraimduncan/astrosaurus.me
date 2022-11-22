@@ -5,7 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app *.googletagmanager.com;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app *.googletagmanager.com *.vercel-insights.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com cdn.jsdelivr.net;
   img-src * blob: data:;
   media-src 'none';
@@ -48,7 +48,7 @@ const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy
   {
     key: 'Permissions-Policy',
-    value: 'camera=(), microphone=(), geolocation=()',
+    value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
   },
 ];
 
@@ -67,33 +67,7 @@ module.exports = withBundleAnalyzer({
     ];
   },
 
-  async rewrites() {
-    return [
-      {
-        source: '/bee.js',
-        destination: 'https://cdn.splitbee.io/sb.js',
-      },
-      {
-        source: '/_hive/:slug',
-        destination: 'https://hive.splitbee.io/:slug',
-      },
-    ];
-  },
-
   webpack: (config, { dev, isServer }) => {
-    config.module.rules.push({
-      test: /\.(png|jpe?g|gif|mp4)$/i,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            publicPath: '/_next',
-            name: 'static/media/[name].[hash].[ext]',
-          },
-        },
-      ],
-    });
-
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],

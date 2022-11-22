@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@giscus/react": "^2.2.4",
     "@mailchimp/mailchimp_marketing": "^3.0.58",
     "@tailwindcss/typography": "^0.5.0",
     "@vercel/analytics": "^0.1.5",
