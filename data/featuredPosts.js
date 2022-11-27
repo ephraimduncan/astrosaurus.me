@@ -1,5 +1,5 @@
 export const FeaturedPosts = [
-  { slug: 'javascripts-prayer', title: "The JavaScript's Prayer", date: '2020-08-29' },
+  { slug: 'nextjs-preact', title: 'Use Preact in Next.js 13', date: '2022-11-26' },
   { slug: 'javascript-syntax', title: 'Create Your Own JavaScript Syntax', date: '2020-11-25' },
   {
     slug: 'developer-tips',
