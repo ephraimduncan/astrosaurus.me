@@ -1,6 +1,6 @@
 import Link from '@/components/Link';
 import PageTitle from '@/components/PageTitle';
-import { BlogSEO } from '@/components/NextSEO';
+import { BlogSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
 import formatDate from '@/lib/utils/formatDate';
 import ScrollTopAndComment from '@/components/ScrollTopAndComment';
