@@ -53,7 +53,6 @@ export default async function (req) {
           <span
             style={{
               marginLeft: 8,
-              fontSize: 20,
               fontSize: '32px',
             }}
           >

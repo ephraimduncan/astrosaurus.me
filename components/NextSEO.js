@@ -5,7 +5,7 @@ export const MainSEO = () => {
   const [hostname, setHostname] = React.useState('');
 
   React.useEffect(() => {
-    if (typeof window !== undefined) {
+    if (typeof window !== 'undefined') {
       setHostname(window.location.hostname);
     }
   }, []);
@@ -49,7 +49,7 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, tag
   const [hostname, setHostname] = React.useState('');
 
   React.useEffect(() => {
-    if (typeof window !== undefined) {
+    if (typeof window !== 'undefined') {
       setHostname(window.location.hostname);
     }
   }, []);
