@@ -8,7 +8,6 @@ import { Analytics } from '@vercel/analytics/react';
 import siteMetadata from '@/data/siteMetadata';
 import LayoutWrapper from '@/components/LayoutWrapper';
 import { ClientReload } from '@/components/ClientReload';
-import { MainSEO } from '@/components/NextSEO';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 const isSocket = process.env.SOCKET;
@@ -22,7 +21,6 @@ export default function App({ Component, pageProps }) {
       {isDevelopment && isSocket && <ClientReload />}
       <LayoutWrapper>
         <Analytics />
-        <MainSEO />
         <Component {...pageProps} />
       </LayoutWrapper>
     </ThemeProvider>
