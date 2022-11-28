@@ -8,8 +8,13 @@ const font = fetch(new URL('../../public/fonts/Inter-Bold.ttf', import.meta.url)
   res.arrayBuffer()
 );
 
-export default async function () {
+export default async function (req) {
   const fontData = await font;
+
+  const { searchParams } = new URL(req.url);
+
+  const hasTitle = searchParams.has('title');
+  const title = hasTitle ? searchParams.get('title')?.slice(0, 100) : 'Ephraim Atta-Duncan';
 
   return new ImageResponse(
     (
@@ -61,14 +66,14 @@ export default async function () {
             justifyContent: 'flex-start',
             margin: '80px',
             width: 'auto',
-            maxWidth: 600,
-            fontSize: 67,
+            maxWidth: !hasTitle ? 1200 : 550,
+            fontSize: !hasTitle ? 90 : 67,
             fontWeight: 700,
             lineHeight: '100%',
             letterSpacing: '-4px',
           }}
         >
-          Making the Web. Faster.
+          {title}
         </div>
       </div>
     ),
