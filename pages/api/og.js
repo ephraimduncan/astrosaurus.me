@@ -66,11 +66,11 @@ export default async function (req) {
             justifyContent: 'flex-start',
             margin: '80px',
             width: 'auto',
-            maxWidth: !hasTitle ? 1200 : 550,
-            fontSize: !hasTitle ? 90 : 67,
+            maxWidth: !hasTitle ? 1200 : 600,
+            fontSize: 90,
             fontWeight: 700,
-            lineHeight: '100%',
-            letterSpacing: '-4px',
+            lineHeight: '120%',
+            letterSpacing: '-5px',
           }}
         >
           {title}
