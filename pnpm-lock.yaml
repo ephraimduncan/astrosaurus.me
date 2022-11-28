@@ -29,6 +29,7 @@ specifiers:
   motion: ^10.10.0
   next: '12.3'
   next-remote-watch: ^1.0.0
+  next-seo: ^5.14.1
   next-themes: ^0.0.14
   postcss: ^8.4.5
   preact: ^10.6.2
@@ -66,6 +67,7 @@ dependencies:
   mdx-bundler: 8.1.0_esbuild@0.13.15
   motion: 10.14.2
   next: 12.3.4_sfoxds7t5ydpegc3knd667wn6m
+  next-seo: 5.14.1_dwjfwrt6uv2f53xn6wotzcxyoa
   next-themes: 0.0.14_dwjfwrt6uv2f53xn6wotzcxyoa
   postcss: 8.4.18
   preact: 10.11.2
@@ -5638,6 +5640,18 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /next-seo/5.14.1_dwjfwrt6uv2f53xn6wotzcxyoa:
+    resolution: {integrity: sha512-NiJeQbxYP3z+EMp52q8k3Q+OfX2+Yv2WehERDj98r2wjXxL+woKpRBdsSVYolTD0Hm8IWs42SzaISE93RoQdOw==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 12.3.4_sfoxds7t5ydpegc3knd667wn6m
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
 
   /next-themes/0.0.14_dwjfwrt6uv2f53xn6wotzcxyoa:
     resolution: {integrity: sha512-x09OaM+wg3SIlEjOv8B21aw/E36jxTtfW3Dm/DPwMsSMluGt7twe1LigA6nc+mXP1u0qu9MxBaIrPPH6UTiKnA==}

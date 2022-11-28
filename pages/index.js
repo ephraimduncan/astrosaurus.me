@@ -1,6 +1,4 @@
 import Link from '@/components/Link';
-import { PageSEO } from '@/components/SEO';
-import siteMetadata from '@/data/siteMetadata';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import BlogPostCard from '@/components/BlogPostCard';
 import { FeaturedPosts as posts } from '@/data/featuredPosts';
@@ -17,10 +15,10 @@ export async function getStaticProps() {
 export default function Home() {
   return (
     <>
-      <PageSEO
+      {/* <PageSEO
         title={siteMetadata.title + ' - Developer, Writer'}
         description={siteMetadata.description}
-      />
+      /> */}
       <div>
         <h3 className="font-bold text-2xl mt-4 md:text-3xl tracking-tight  text-black dark:text-white">
           Ephraim Atta-Duncan
