@@ -1,4 +1,3 @@
-import { PageSEO } from '@/components/SEO';
 import siteMetadata from '@/data/siteMetadata';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import ListLayout from '@/layouts/ListLayout';

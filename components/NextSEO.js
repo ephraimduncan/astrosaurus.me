@@ -20,7 +20,7 @@ export const MainSEO = () => {
           url: hostname,
           title: 'Ephraim Atta-Duncan',
           description: 'A Software Engineer in Ghana',
-          images: [{ url: `${hostname}/api/og` }],
+          images: [{ url: `https://${hostname}/api/og` }],
           siteName: 'Ephraim Atta-Duncan Personal Portfolio',
         }}
         twitter={{
@@ -72,7 +72,7 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, tag
           },
           images: [
             {
-              url: `${hostname}/api/og?title=${title}`,
+              url: `https://${hostname}/api/og?title=${title}`,
               alt: title,
             },
           ],

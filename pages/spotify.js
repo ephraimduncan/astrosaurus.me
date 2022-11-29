@@ -1,5 +1,4 @@
 import NowPlaying from '@/components/NowPlaying';
-import { PageSEO } from '@/components/SEO';
 import Tracks from '@/components/Tracks';
 import siteMetadata from '@/data/siteMetadata';
 
