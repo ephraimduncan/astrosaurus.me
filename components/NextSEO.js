@@ -1,15 +1,6 @@
-import React from 'react';
 import { NextSeo } from 'next-seo';
 
 export const MainSEO = () => {
-  const [hostname, setHostname] = React.useState('');
-
-  React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setHostname(window.location.hostname);
-    }
-  }, []);
-
   return (
     <>
       <NextSeo
@@ -17,10 +8,10 @@ export const MainSEO = () => {
         description="A Software Developer in Ghanna"
         openGraph={{
           type: 'website',
-          url: hostname,
+          url: 'https://astrosaurus.me',
           title: 'Ephraim Atta-Duncan',
           description: 'A Software Engineer in Ghana',
-          images: [{ url: `https://${hostname}/api/og` }],
+          images: [{ url: 'https://astrosaurus.me/api/og' }],
           siteName: 'Ephraim Atta-Duncan Personal Portfolio',
         }}
         twitter={{
@@ -46,14 +37,6 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, tag
   const publishedAt = new Date(date).toISOString();
   const modifiedAt = new Date(lastmod || date).toISOString();
 
-  const [hostname, setHostname] = React.useState('');
-
-  React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setHostname(window.location.hostname);
-    }
-  }, []);
-
   return (
     <>
       <NextSeo
@@ -72,7 +55,7 @@ export const BlogSEO = ({ authorDetails, title, summary, date, lastmod, url, tag
           },
           images: [
             {
-              url: `https://${hostname}/api/og?title=${title}`,
+              url: `https://astrosaurus.me/api/og?title=${title}`,
               alt: title,
             },
           ],
