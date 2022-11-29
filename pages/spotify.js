@@ -6,7 +6,7 @@ import siteMetadata from '@/data/siteMetadata';
 export default function Spotify() {
   return (
     <>
-      <PageSEO title="Spotify" description={siteMetadata.description} />
+      {/* <PageSEO title="Spotify" description={siteMetadata.description} /> */}
       <div>
         <h2 className="font-bold text-3xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Top Tracks
