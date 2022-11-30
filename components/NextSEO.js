@@ -5,14 +5,14 @@ export const MainSEO = () => {
     <>
       <NextSeo
         title="Ephraim Atta-Duncan"
-        description="A Software Developer in Ghanna"
+        description="Software Developer and Software Engineer in Ghanna"
         openGraph={{
           type: 'website',
           url: 'https://astrosaurus.me',
           title: 'Ephraim Atta-Duncan',
-          description: 'A Software Engineer in Ghana',
+          description: 'Software Engineer in Ghana',
           images: [{ url: 'https://astrosaurus.me/api/og' }],
-          siteName: 'Ephraim Atta-Duncan Personal Portfolio',
+          siteName: 'Ephraim Atta-Duncan',
         }}
         twitter={{
           handle: '@EphraimDuncan_',
