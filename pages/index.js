@@ -57,7 +57,9 @@ export default function Home() {
           All Posts &rarr;
         </Link>
       </div>
-      <NowPlaying />
+      <Link href="https://volt.fm/duncan">
+        <NowPlaying />
+      </Link>
     </>
   );
 }
