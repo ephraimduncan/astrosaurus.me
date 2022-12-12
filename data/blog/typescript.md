@@ -15,7 +15,7 @@ summary: 'TypeScript Basics for beginners'
 Typescript is an open-source object oriented programming language developed and maintained by Microsoft. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It's more like if JavsScript is raw coffee, TypeScript is coffee with milk, another coffee, just much better.
 
 <div align="center">
-<img src="../../public/static/images/ts.png" alt="TypeScript Superset"  width="250"/>
+<img src="/static/images/ts.png" alt="TypeScript Superset"  width="250"/>
 </div>
 
 In this post, we will take a basic overview of typescript as a whole and look more into the syntax in the next post.

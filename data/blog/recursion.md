@@ -42,7 +42,7 @@ console.log(factorial(5)); // Outputs: 120
 
 The image shows the execution of the `factorial` function.
 
-![Factorial](/public/static/factorial.png)
+![Factorial](/static/factorial.png)
 
 The factorial function calculates the factorial of a given number by calling itself repeatedly with the input number minus one each time. This continues until the input number is 0, at which point the function returns 1 (the base case) and the recursion stops.
 
@@ -68,7 +68,7 @@ console.log(fibonacci(5)); // Outputs: 55
 ```
 
 This image shows the execution of the `factorial` function.
-![Fibonnaci](/public/static/fibbonaci.webp)
+![Fibonnaci](/static/fibbonaci.webp)
 
 The fibonacci function calculates the `nth` number in the fibonacci sequence by calling itself repeatedly with the input number minus one and minus two each time. This continues until the input number is 0 or 1, at which point the function returns 1 (the base case) and the recursion stops. The sum of the previous two fibonacci numbers are then returned, allowing the recursion to return to the previous call and continue until the original call to `fibonacci(n)` returns the nth fibonacci number.
 
@@ -99,7 +99,7 @@ This continues until the input array is empty, at which point the function retur
 
 Recursion can be used in React components in cases where a component needs to render a nested structure of data, such as a list of comments on a blog post or a social media site like Reddit.
 
-![Nested Comments](/public/static/nested-comments-final.png)
+![Nested Comments](/static/nested-comments-final.png)
 
 Let's consider the following React component that renders a the comments and their replies like the one above.
 
