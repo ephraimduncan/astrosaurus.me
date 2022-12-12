@@ -5,13 +5,17 @@ tags: ['nextjs', 'javascript', 'react']
 summary: 'Recursion in JavaScript and React Components'
 ---
 
-## Recursion
+## Table of Contents
 
-Recursion, in its essence, is a method of problem-solving that employs the solution to be expressed in terms of itself. This means that a function that employs recursion will call upon itself repeatedly until it reaches a specific base case, at which point the recursion will cease and the function will return a result.
+<TOCInline toc={props.toc} exclude="Table of Contents" />
+
+**Recursion**, in its essence, is a method of problem-solving that employs the solution to be expressed in terms of itself. This means that a function that employs recursion will call upon itself repeatedly until it reaches a specific base case, at which point the recursion will cease and the function will return a result.
 
 Recursive functions can be very useful in a variety of situations. They are a way of defining a function in terms of itself, which can be a powerful tool for solving certain types of problems.
 
-One example of where recursive functions can be useful is in computer science. For example, recursive functions can be used to traverse tree data structures, allowing for an elegant and efficient solution to the problem of visiting and processing each node in the tree. In this context, a recursive function would call itself on each of the child nodes of the current node, allowing it to visit and process each node in the tree in turn. This approach can be much more efficient and elegant than using a loop to traverse the tree.
+One example of where recursive functions can be useful is in computer science. For example, recursive functions can be used to traverse tree data structures, allowing for an elegant and efficient solution to the problem of visiting and processing each node in the tree.
+
+In this context, a recursive function would call itself on each of the child nodes of the current node, allowing it to visit and process each node in the tree in turn. This approach can be much more efficient and elegant than using a loop to traverse the tree.
 
 There are more practical applications of recursive functions as we would find out. Let's look at some basic examples of recursive functions.
 
@@ -38,7 +42,7 @@ console.log(factorial(5)); // Outputs: 120
 
 The image shows the execution of the `factorial` function.
 
-![Factorial](../../public/static/factorial.png)
+![Factorial](/public/static/factorial.png)
 
 The factorial function calculates the factorial of a given number by calling itself repeatedly with the input number minus one each time. This continues until the input number is 0, at which point the function returns 1 (the base case) and the recursion stops.
 
@@ -64,7 +68,7 @@ console.log(fibonacci(5)); // Outputs: 55
 ```
 
 This image shows the execution of the `factorial` function.
-![Fibonnaci](../../public/static/fibbonaci.webp)
+![Fibonnaci](/public/static/fibbonaci.webp)
 
 The fibonacci function calculates the `nth` number in the fibonacci sequence by calling itself repeatedly with the input number minus one and minus two each time. This continues until the input number is 0 or 1, at which point the function returns 1 (the base case) and the recursion stops. The sum of the previous two fibonacci numbers are then returned, allowing the recursion to return to the previous call and continue until the original call to `fibonacci(n)` returns the nth fibonacci number.
 
@@ -95,7 +99,7 @@ This continues until the input array is empty, at which point the function retur
 
 Recursion can be used in React components in cases where a component needs to render a nested structure of data, such as a list of comments on a blog post or a social media site like Reddit.
 
-![Nested Comments](../../public/static/nested-comments-final.png)
+![Nested Comments](/public/static/nested-comments-final.png)
 
 Let's consider the following React component that renders a the comments and their replies like the one above.
 
