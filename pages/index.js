@@ -1,10 +1,9 @@
 import Link from '@/components/Link';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import BlogPostCard from '@/components/BlogPostCard';
-import { FeaturedPosts as posts } from '@/data/featuredPosts';
 import NowPlaying from '@/components/NowPlaying';
 
-const MAX_DISPLAY = 5;
+const MAX_DISPLAY = 7;
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog');
@@ -12,7 +11,7 @@ export async function getStaticProps() {
   return { props: { posts } };
 }
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <>
       {/* <PageSEO
@@ -23,7 +22,7 @@ export default function Home() {
         <h3 className="font-bold text-2xl mt-4 md:text-3xl tracking-tight  text-black dark:text-white">
           Ephraim Atta-Duncan
         </h3>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+        <p className="text-lg leading-7 text-gray-500 my-2 dark:text-gray-400">
           I'm a developer, writer and an indie hacker building products for the web. I like open
           source too.
         </p>
@@ -31,8 +30,8 @@ export default function Home() {
 
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="pt-6 pb-4 space-y-2 md:space-y-5">
-          <h3 className="font-bold text-2xl md:text-3xl tracking-tight  text-black dark:text-white">
-            Featured Posts
+          <h3 className="font-bold text-2xl md:text-3xl tracking-tight my-4 text-black dark:text-white">
+            Recent Posts
           </h3>
         </div>
 
