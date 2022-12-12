@@ -16,6 +16,8 @@ export default async function (req) {
   const hasTitle = searchParams.has('title');
   const title = hasTitle ? searchParams.get('title')?.slice(0, 100) : 'Ephraim Atta-Duncan';
 
+  const isLongTitle = title.length > 30;
+
   return new ImageResponse(
     (
       <div
@@ -65,8 +67,8 @@ export default async function (req) {
             justifyContent: 'flex-start',
             margin: '80px',
             width: 'auto',
-            maxWidth: !hasTitle ? 1200 : 600,
-            fontSize: 90,
+            maxWidth: !hasTitle ? 1200 : isLongTitle ? 1000 : 600,
+            fontSize: isLongTitle ? 80 : 90,
             fontWeight: 700,
             lineHeight: '120%',
             letterSpacing: '-5px',
