@@ -33,7 +33,6 @@ export default async function (req) {
           fontFamily: 'Inter',
           backgroundColor: '#000',
           color: '#fff',
-          border: '6px solid white',
         }}
       >
         <div

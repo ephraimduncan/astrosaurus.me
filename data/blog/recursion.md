@@ -2,7 +2,7 @@
 title: 'Recursion in JavaScript and React Components'
 date: 2022-12-12
 tags: ['nextjs', 'javascript', 'react']
-summary: 'Recursion in JavaScript'
+summary: 'Recursion in JavaScript and React Components'
 ---
 
 ## Recursion
