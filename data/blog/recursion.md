@@ -9,6 +9,8 @@ summary: 'Recursion in JavaScript and React Components'
 
 <TOCInline toc={props.toc} exclude="Table of Contents" />
 
+## Introduction
+
 **Recursion**, in its essence, is a method of problem-solving that employs the solution to be expressed in terms of itself. This means that a function that employs recursion will call upon itself repeatedly until it reaches a specific base case, at which point the recursion will cease and the function will return a result.
 
 Recursive functions can be very useful in a variety of situations. They are a way of defining a function in terms of itself, which can be a powerful tool for solving certain types of problems.
