@@ -1,0 +1,14 @@
+{
+  "../components/ClientReload.js -> socket.io-client": {
+    "id": "../components/ClientReload.js -> socket.io-client",
+    "files": [
+      "static/chunks/node_modules_pnpm_socket_io-client_4_5_3_node_modules_socket_io-client_build_esm_index_js.js"
+    ]
+  },
+  "../components/comments/index.js -> @/components/comments/Giscus": {
+    "id": "../components/comments/index.js -> @/components/comments/Giscus",
+    "files": [
+      "static/chunks/components_comments_Giscus_js.js"
+    ]
+  }
+}
