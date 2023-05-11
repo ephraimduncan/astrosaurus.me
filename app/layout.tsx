@@ -28,12 +28,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={kaisei.variable}>
       <body
-        className={`mt-24 antialiased min-h-screen bg-grey-50 dark:bg-grey-950 text-grey-900 dark:text-grey-50 ${inter.className}`}
+        className={`mt-24 antialiased min-h-screen bg-grey-50 dark:bg-grey-950 text-grey-800 dark:text-grey-100 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="max-w-xl mx-auto py-10">
             <header>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between mb-4">
                 <div>
                   <h1 className="font-serif text-3xl">Ephraim Atta-Duncan</h1>
                 </div>
