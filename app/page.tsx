@@ -9,21 +9,16 @@ export default function Home() {
     <div>
       <div className=" dark:text-grey-100 text-grey-800 mt-10 space-y-5">
         <p>
-          Hi there, I&apos;m a developer, writer, and a hacker who&apos;s
-          passionate about building products for the web. I&apos;m particularly
-          interested in open source development and actively contribute to
-          various projects like <strong>Documenso</strong>.
+          Building polished software experiences with magical, unique and
+          delightful details, for the web. I aim to create beautiful and
+          functional software that is both intuitive and enjoyable for users.
         </p>
         <p>
-          In my spare time, I enjoy sharing my learnings and experiences with
-          fellow developers through my blog. I&apos;m always looking for
-          opportunities to learn new technologies and improve my skills.
-        </p>
-        <p>
-          I&apos;m a detail-oriented engineer with a passion for frontend
-          architecture, React, TypeScript, and metaframeworks. I specialize in
-          building and maintaining public-facing websites and web applications
-          with Next.js.
+          I have a passion for learning, and am constantly seeking to improve my
+          skills through avid <span className="inline-link">reading</span> and{" "}
+          <span className="inline-link">writing</span>. Currently interested in
+          <em> TypeScript</em> and <em> Rust</em>. Experimenting native apps
+          with <em> Swift</em>.
         </p>
       </div>
       <svg
@@ -65,7 +60,7 @@ export default function Home() {
         {allPosts.map((post) => (
           <article key={post._id} className="mb-8">
             <Link href={post.slug} className="flex justify-between items-start">
-              <h2 className="text-lg hover:underline hover:decoration-1	mb-1">
+              <h2 className="text-lg hover:underline decoration-grey-100 hover:decoration-1 mb-1">
                 {post.title}
               </h2>
               <span className="text-sm">

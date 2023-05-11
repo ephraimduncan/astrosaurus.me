@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         serif: ["var(--font-kaisei)"],
+        emp: ["var(--font-newsreader)"],
       },
       colors: {
         grey: {

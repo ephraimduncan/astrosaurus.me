@@ -1,12 +1,17 @@
 import Link from "next/link";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Newsreader } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@/components/analytics";
 import { ModeToggle } from "@/components/mode-toggle";
 import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  style: "italic",
+  variable: "--font-newsreader",
+});
 
 const kaisei = localFont({
   src: "../public/fonts/kaisei-tokumin-latin-700-normal.woff2",
@@ -26,7 +31,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={kaisei.variable}>
+    <html lang="en" className={`${kaisei.variable} ${newsreader.variable}`}>
       <body
         className={`mt-24 antialiased min-h-screen bg-grey-50 dark:bg-grey-950 text-grey-800 dark:text-grey-100 ${inter.className}`}
       >
@@ -36,6 +41,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex items-center justify-between mb-4">
                 <div>
                   <h1 className="font-serif text-3xl">Ephraim Atta-Duncan</h1>
+                  <h3 className="text-grey-400 text-lg mt-2">
+                    Frontend Engineer
+                  </h3>
                 </div>
                 <div>
                   <ModeToggle />
