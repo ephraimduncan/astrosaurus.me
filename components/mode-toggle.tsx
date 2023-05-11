@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useTheme } from "next-themes"
+import { useTheme } from "next-themes";
 
 export function ModeToggle() {
-  const { setTheme, theme } = useTheme()
+  const { setTheme, theme } = useTheme();
 
   return (
     <button
@@ -18,7 +18,7 @@ export function ModeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-4 h-4"
+          className="w-4 h-4 text-grey-800 "
         >
           <path
             strokeLinecap="round"
@@ -33,7 +33,7 @@ export function ModeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-4 h-4"
+          className="w-4 h-4 text-grey-100"
         >
           <path
             strokeLinecap="round"
@@ -43,5 +43,5 @@ export function ModeToggle() {
         </svg>
       )}
     </button>
-  )
+  );
 }
