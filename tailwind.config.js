@@ -7,7 +7,11 @@ module.exports = {
   ],
   darkMode: ["class"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        serif: ["var(--font-kaisei)"],
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
-}
+};
