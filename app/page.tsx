@@ -1,7 +1,8 @@
 import { allPosts } from "@/.contentlayer/generated";
-import { Arrow } from "@/components/ui/Arrow";
 import { ExternalLink } from "@/components/ui/ExternalLink";
+import { Pen } from "@/components/ui/Pen";
 import Link from "next/link";
+import { formatDistance } from "date-fns";
 
 export default function Home() {
   return (
@@ -55,13 +56,27 @@ export default function Home() {
         />
       </div>
 
-      <div className="prose dark:prose-invert">
+      <div className="mt-16">
+        <span className="text-xl flex gap-2 items-center my-6">
+          <Pen size={20} />
+          Writing
+        </span>
+
         {allPosts.map((post) => (
-          <article key={post._id}>
-            <Link href={post.slug}>
-              <h2>{post.title}</h2>
+          <article key={post._id} className="mb-8">
+            <Link href={post.slug} className="flex justify-between items-start">
+              <h2 className="text-lg hover:underline hover:decoration-1	mb-1">
+                {post.title}
+              </h2>
+              <span className="text-sm">
+                {formatDistance(new Date(post.date), new Date(), {
+                  addSuffix: true,
+                })}
+              </span>
             </Link>
-            {post.description && <p>{post.description}</p>}
+            {post.description && (
+              <p className="text-sm text-grey-400">{post.description}</p>
+            )}
           </article>
         ))}
       </div>
