@@ -28,17 +28,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={kaisei.variable}>
       <body
-        className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
+        className={`mt-24 antialiased min-h-screen bg-grey-50 dark:bg-grey-950 text-grey-900 dark:text-grey-50 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-2xl mx-auto py-10">
+          <div className="max-w-xl mx-auto py-10">
             <header>
               <div className="flex items-center justify-between">
-                <ModeToggle />
-                <nav className="ml-auto text-sm font-medium space-x-6">
-                  <Link href="/">Home</Link>
-                  <Link href="/about">About</Link>
-                </nav>
+                <div>
+                  <h1 className="font-serif text-3xl">Ephraim Atta-Duncan</h1>
+                </div>
+                <div>
+                  <ModeToggle />
+                </div>
               </div>
             </header>
             <main>{children}</main>
