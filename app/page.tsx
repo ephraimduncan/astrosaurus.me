@@ -53,7 +53,7 @@ export default function Home() {
 
       <div className="mt-16">
         <span className="text-xl flex gap-2 items-center my-6">
-          <Pen size={20} />
+          <Pen size={19} />
           Writing
         </span>
 
