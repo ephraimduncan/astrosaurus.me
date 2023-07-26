@@ -33,10 +33,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${kaisei.variable} ${newsreader.variable}`}>
       <body
-        className={`mt-24 antialiased min-h-screen bg-grey-50 dark:bg-grey-950 text-grey-800 dark:text-grey-100 ${inter.className}`}
+        className={`mt-16 sm:mt-24 antialiased min-h-screen bg-grey-50 dark:bg-grey-950 text-grey-800 dark:text-grey-100 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-xl mx-auto py-10">
+          <div className="max-w-xl mx-auto md:py-10 px-4">
             <header>
               <div className="flex items-center justify-between mb-4">
                 <div>
