@@ -8,7 +8,7 @@ export function ModeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="border rounded-md w-6 h-6 flex items-center justify-center"
+      className="border rounded-md w-6 h-6 flex items-center justify-center border-grey-800 dark:border-gray-100"
     >
       <span className="sr-only">Toggle mode</span>
       {theme === "light" ? (
@@ -18,7 +18,7 @@ export function ModeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-4 h-4 text-grey-800 "
+          className="w-4 h-4 text-grey-800"
         >
           <path
             strokeLinecap="round"
