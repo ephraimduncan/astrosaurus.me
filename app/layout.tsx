@@ -35,7 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`mt-16 sm:mt-24 antialiased min-h-screen bg-grey-50 dark:bg-grey-950 text-grey-800 dark:text-grey-100 ${inter.className}`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <div className="max-w-xl mx-auto md:py-10 px-4">
             <header>
               <div className="flex items-center justify-between mb-4">
