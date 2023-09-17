@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         serif: ["var(--font-kaisei)"],
         emp: ["var(--font-newsreader)"],
+        nwr: ["var(--font-newsreader-regular)"],
       },
       colors: {
         grey: {
