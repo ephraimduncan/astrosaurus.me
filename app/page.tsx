@@ -1,11 +1,23 @@
-import { allPosts } from "@/.contentlayer/generated";
+import { Post, allPosts } from "@/.contentlayer/generated";
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import { Pen } from "@/components/ui/Pen";
 import Link from "next/link";
 import { formatDistance } from "date-fns";
 import { ModeToggle } from "@/components/mode-toggle";
 
+function getMostRecent5(arrayOfObjects: Post[]) {
+  arrayOfObjects.sort((a, b) => {
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return dateB - dateA;
+  });
+
+  return arrayOfObjects.slice(0, 5);
+}
+
 export default function Home() {
+  const homePagePosts = getMostRecent5(allPosts);
+
   return (
     <div>
       <header>
@@ -72,7 +84,7 @@ export default function Home() {
           Writing
         </span>
 
-        {allPosts.map((post) => (
+        {homePagePosts.map((post) => (
           <article key={post._id} className="mb-8">
             <Link href={post.slug} className="flex justify-between items-start">
               <h2 className="text-lg hover:underline decoration-grey-100 hover:decoration-1 mb-1">
