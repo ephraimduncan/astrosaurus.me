@@ -3,6 +3,7 @@ import { allPosts } from "contentlayer/generated";
 
 import { Metadata } from "next";
 import { Mdx } from "@/components/mdx-components";
+import Link from "next/link";
 
 interface PostProps {
   params: {
@@ -50,15 +51,26 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <article className="py-6 prose dark:prose-invert">
-      <h1 className="mb-2">{post.title}</h1>
-      {post.description && (
-        <p className="text-xl mt-0 text-slate-700 dark:text-slate-200">
-          {post.description}
-        </p>
-      )}
-      <hr className="my-4" />
-      <Mdx code={post.body.code} />
-    </article>
+    <div className="-mt-10">
+      <div className="mb-5">
+        <Link href="/" className="hover:underline">
+          duncan.land
+        </Link>
+      </div>
+      <article className="py-6 prose dark:prose-invert">
+        <div className="mb-10">
+          <h1 className="mb-2 text-2xl">{post.title}</h1>
+
+          <p className="text-base mt-0 text-slate-700 dark:text-slate-200">
+            {new Date(post.date).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </p>
+        </div>
+        <Mdx code={post.body.code} />
+      </article>
+    </div>
   );
 }

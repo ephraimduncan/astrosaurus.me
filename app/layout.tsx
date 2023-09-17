@@ -1,9 +1,7 @@
-import Link from "next/link";
 import "./globals.css";
 import { Inter, Newsreader } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@/components/analytics";
-import { ModeToggle } from "@/components/mode-toggle";
 import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,22 +34,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={`mt-16 sm:mt-24 antialiased bg-grey-50 dark:bg-grey-950 text-grey-800 dark:text-grey-100 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="max-w-xl mx-auto md:py-10 px-4">
-            <header>
-              <div className="flex items-center justify-between mb-4">
-                <div>
-                  <h1 className="font-serif text-3xl">Ephraim Atta-Duncan</h1>
-                  <h3 className="text-grey-400 text-lg mt-2">
-                    Frontend Engineer
-                  </h3>
-                </div>
-                <div>
-                  <ModeToggle />
-                </div>
-              </div>
-            </header>
-            <main>{children}</main>
-          </div>
+          <main className="max-w-2xl mx-auto md:py-10 px-4">{children}</main>
+
           <Analytics />
         </ThemeProvider>
       </body>

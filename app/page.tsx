@@ -3,10 +3,22 @@ import { ExternalLink } from "@/components/ui/ExternalLink";
 import { Pen } from "@/components/ui/Pen";
 import Link from "next/link";
 import { formatDistance } from "date-fns";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
   return (
     <div>
+      <header>
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h1 className="font-serif text-3xl">Ephraim Atta-Duncan</h1>
+            <h3 className="text-grey-400 text-lg mt-2">Frontend Engineer</h3>
+          </div>
+
+          <ModeToggle />
+        </div>
+      </header>
+
       <div className=" dark:text-grey-100 text-grey-800 mt-10 space-y-5">
         <p>
           Building polished software experiences with magical, unique and
