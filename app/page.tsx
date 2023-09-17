@@ -14,9 +14,10 @@ export default function Home() {
           functional software that is both intuitive and enjoyable for users.
         </p>
         <p>
-          I have a passion for learning, and am constantly seeking to improve my
-          skills through avid <span className="inline-link">reading</span> and{" "}
-          <span className="inline-link">writing</span>. Currently interested in
+          I have a passion for learning, and I am constantly seeking to improve
+          my skills through avid <span className="inline-link">reading</span>{" "}
+          and <span className="inline-link">writing</span>. Currently interested
+          in
           <em> TypeScript</em> and <em> Rust</em>. Experimenting native apps
           with <em> Swift</em>.
         </p>
