@@ -1,7 +1,21 @@
-# Next.js + Contentlayer
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdephraiim%2Fduncan.land)
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
+# duncan.land
 
-https://next-contentlayer.vercel.app
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Deployment**: [Vercel](https://vercel.com)
+- **Content**: [ContentLayer](https://contentlayer.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
+## Running Locally
 
+```bash
+$ git clone https://github.com/dephraiim/astrosaurus.me.git
+$ cd duncan.land
+$ bun install
+$ bun dev
+```
+
+## Cloning / Forking
+
+Please review the [license](/LICENSE) and remove all of my personal information (resume, blog posts, images, etc.).
