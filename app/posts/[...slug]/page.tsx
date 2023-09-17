@@ -61,13 +61,22 @@ export default async function PostPage({ params }: PostProps) {
         <div className="mb-10">
           <h1 className="mb-2 text-2xl">{post.title}</h1>
 
-          <p className="text-base mt-0 text-slate-700 dark:text-slate-200">
-            {new Date(post.date).toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
-          </p>
+          <div className="flex gap-x-2">
+            <p className="text-base mt-0 text-slate-700 dark:text-slate-200">
+              {new Date(post.date).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+            <p className="text-base mt-0 text-slate-700 dark:text-slate-200">
+              •
+            </p>
+
+            <p className="text-base mt-0 text-slate-700 dark:text-slate-200">
+              {post.readTimeMinutes}
+            </p>
+          </div>
         </div>
         <Mdx code={post.body.code} />
       </article>
