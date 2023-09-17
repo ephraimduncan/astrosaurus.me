@@ -78,7 +78,7 @@ export default function Home() {
 
       <div className="mt-16">
         <span className="text-xl flex gap-2 items-center my-6 cursor-pointer">
-          <Link href="/writings">
+          <Link href="/blog">
             <Pen size={19} />
           </Link>
           Writing

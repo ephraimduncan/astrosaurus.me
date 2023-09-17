@@ -53,7 +53,10 @@ export default async function PostPage({ params }: PostProps) {
   return (
     <div className="-mt-10">
       <div className="mb-5">
-        <Link href="/" className="hover:underline">
+        <Link
+          href="/"
+          className="text-grey-300 dark:text-grey-700  hover:underline"
+        >
           duncan.land
         </Link>
       </div>
