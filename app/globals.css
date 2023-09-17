@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+em {
+  @apply font-emp italic;
+}
+
+.inline-link {
+  @apply underline decoration-1 cursor-pointer;
+}
